@@ -432,3 +432,50 @@ input  { font: inherit; }
 }
 .setting-unit { font-size: 13px; color: var(--muted); min-width: 24px; }
 .about-text { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 6px; }
+
+/* ── Barcode scanner / UPC styles ────────────────────────────────────── */
+.scan-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.scan-btn:active { opacity: 0.85; }
+.scan-icon { font-size: 32px; line-height: 1; margin-bottom: 2px; }
+.scan-sub  { font-size: 12px; opacity: 0.75; font-weight: 400; }
+
+.upc-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.upc-divider::before,
+.upc-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.photo-hint {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
